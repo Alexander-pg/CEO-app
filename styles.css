@@ -1,0 +1,172 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("lastfondo.webp");
+    object-fit: cover;
+    background-repeat:repeat;
+}
+
+.main{
+    display: flex;
+}
+
+
+.profile_name{
+    display: flex;
+    width: 100%;
+    align-content: center;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.profile_name .arrow{
+    display: flex;
+    align-content: center;
+    flex-grow: 5;
+    justify-content: flex-end;
+    padding-top: 25px ;
+    padding-right: 30px;
+    
+}
+
+.profile_name .arrow img{
+    width:25px;
+    height: 25px;
+    background-color: beige;
+    border-radius: 50%;
+    
+}
+
+.profile_name .arrow img:hover{
+    cursor: pointer;
+}
+
+.profile_name .user{
+    display: flex;
+    flex-grow: 5;
+    justify-content: flex-start;
+    padding-left: 30px;
+}
+
+/* the profile card*/
+
+.data{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    background-color: rgb(57, 201, 201);
+    flex-wrap: wrap;
+    padding-left: 10px;
+    border-radius: 3px;
+    color: white;
+    
+ 
+/* From https://css.glass */
+background: rgba(144, 155, 218, 0.08);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(6.5px);
+-webkit-backdrop-filter: blur(6.5px);
+}
+
+.data .profile_picture{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+
+}
+
+.data .profile_picture img{
+    width: 160px;
+    height:165px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.data .followers{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 40px;
+}
+
+.data .description{
+    width: 90%;
+}
+
+.follow_button{
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.follow_button input{
+    width: 200px;
+    height: 30px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(53, 53, 139);
+    color: white;
+    font-size: 18px;
+    border: 0;
+    border-radius: 2px;
+}
+
+.follow_button :hover{
+    background-color: rgb(29, 29, 87);
+    cursor: pointer;
+}
+
+
+/* Posts section*/
+
+.posts_section{
+    
+   width: 80%;
+    margin: 30px auto;
+    display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+    
+}
+
+.posts{
+    width: 280px;
+    display: flex;
+    background-color: azure;
+   flex-wrap: wrap;
+    padding: 10px;
+    margin: 20px;
+
+   /* From https://css.glass */
+background: rgba(144, 155, 218, 0.08);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(6.5px);
+-webkit-backdrop-filter: blur(6.5px);
+color: white;
+
+}
+
+.image_post{
+    display: flex;
+    justify-content: center;
+}
+
+.text_post{
+    display: flex;
+    justify-content: center;
+}
+
+.posts_section .image_post img{
+    width: 90%;
+    border-radius: 3px;
+    object-fit: cover;
+}
+
+.posts:hover{
+    scale: 101%;
+}
